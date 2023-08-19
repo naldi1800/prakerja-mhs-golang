@@ -19,4 +19,6 @@ func InitRoute(e *echo.Echo) {
 	auth.GET("/users", controllers.GetUsersController)
 	auth.GET("/books/:id", controllers.GetDetailBookController)
 	auth.POST("/books", controllers.AddBookController)
+	auth.GET("/mhs", controllers.GetAllMhsController)
+	auth.POST("/mhs", controllers.AddMhsController)
 }
